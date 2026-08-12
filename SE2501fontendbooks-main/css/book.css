@@ -1,0 +1,98 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu{
+    background: linear-gradient(white,blue );
+  padding: 0;
+  margin :0;
+    list-style-type: none ;
+}
+
+.menu>li{
+    border-right: 1px solid darkblue;
+}
+.menu>li:last-child{
+    border-right: none ;
+}
+.menu>li>a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: white ;
+}
+.trangchu{
+    padding: 10px;
+    color:blue;
+    text-align: center;
+    text-shadow: 1px 2px 2px skyblue;
+    font-size: 2rem;
+
+}
+.submenu{
+    display: none;   
+    position:absolute;
+    
+    z-index: 9999;
+    
+}
+
+.sub:hover .submenu{
+    display: block;
+}
+.submenu::after{
+    content: " ";
+    border-width: 15px;
+    border-color:transparent transparent blue transparent;
+border-style: solid;
+position: absolute;
+bottom: 100%;
+left: 40%;
+}
+.book{
+    width: 20%;
+    
+}
+.book>div{
+    position: relative;
+    padding: 10px;
+    border: 1px solid blue;
+    margin: 0.2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.book img {
+    width: 100%;
+    transition: transfrom ;
+}
+.book img:hover{
+    transform: scale(1.2);
+}
+.close {
+    position: absolute;
+    top: 0.05rem;
+    right: 1rem;
+    text-decoration: none;
+    color:blue;
+}
+footer{
+    background:linear-gradient(blue, red);
+    padding: 1.2rem;
+}
+footer>span{
+    animation: move 5s infinite;
+    position: relative;
+}
+@keyframes move {
+    from{
+        left: 0%;
+    }
+    to{
+        left:100%;
+    }
+}

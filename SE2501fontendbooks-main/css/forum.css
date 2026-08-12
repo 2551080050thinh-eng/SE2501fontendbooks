@@ -1,0 +1,85 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flex{
+    display:flex;
+    justify-content: space-between;
+    
+}
+v-center{
+    align-items: center;
+}
+nav{
+    background: linear-gradient(to right bottom,blue,white,skyblue);
+}
+.menu{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+
+}
+.menu>li>a{
+    display: block;
+    padding:18px;
+    color:darkblue;
+    text-decoration: none;
+}
+.brand{
+background:linear-gradient(to right bottom,blue,white,skyblue) ;
+}
+.brand>h1{
+    color:blue;
+    font-size: 2.8rem;
+    text-shadow: 2px,3px,3px,blue;
+}
+.topic{
+    width: 80%;
+    margin: 0 auto;
+}
+.topic>h2{
+    background-color: darkblue;
+    color:wheat;
+    padding:1rem;
+    margin-bottom: 0;
+    border-radius: 1rem 1rem 0 0;
+}
+.forum{
+    padding : 1rem;
+    border-bottom: 1px solid darkblue;
+}
+.forum :last-child{
+    border-bottom: none;
+}
+.topic>.forums{
+background-color: lightblue;
+}
+
+
+.forum img{
+    border-radius: 50%;
+    width: 130px;
+}
+.ads>div{
+    background: linear-gradient(skyblue , blue);
+    width: 9%;
+    font-size: 1.2rem;
+    text-align: center;
+   padding: 8rem 0 ;
+    margin-top: 5px;
+    border-radius: 10px;
+    position: fixed;
+    
+}
+.ads > .left{
+    left: 0.5%;
+}
+.ads > .right{
+    right: 0.5%;
+}
+footer{
+    background: linear-gradient(skyblue , blue);
+color: white;
+text-align: center;
+padding:2rem;
+margin-top: 5px;
+}
