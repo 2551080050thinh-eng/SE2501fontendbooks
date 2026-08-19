@@ -1,0 +1,35 @@
+.modal{
+    background-color: rgba(97, 97, 105, 0.7);
+    position: fixed;
+    width: 100vw;
+    height:100vh;
+    top:0;
+    transition: opacity 1s,visibility 1s;
+
+}
+.modal-show{
+    visibility: visible;
+    opacity: 1;
+}
+.modal-hide {
+    visibility: hidden;
+    opacity: 0;
+}
+.modal-conten {
+    background-color: aliceblue;
+    width: 30%;
+    border-radius: 10px;
+    padding: 1rem;
+    position: relative;
+}
+.control{
+    margin : 20px;
+}
+.modal-color {
+    position: absolute ;
+    right: 1rem;
+    top:10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:1.5 rem;
+}
